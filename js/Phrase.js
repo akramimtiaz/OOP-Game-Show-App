@@ -49,9 +49,9 @@ class Phrase {
      * @param  {letter}         letter to be displayed
      */
     showMatchedLetter(letter){
-        //retrieve all LI elements with a class of letter parameter
+        //retrieve all LI elements with a class of letter
         const elements = document.querySelectorAll(`li.${letter}`);
-        //show all retrieved LI elements
+        //show matched LI elements
         elements.forEach(element => {
             element.classList.remove('hide');
             element.classList.add('show');
