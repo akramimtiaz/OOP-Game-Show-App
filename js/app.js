@@ -34,7 +34,10 @@ document.addEventListener('keydown', (event) => {
         buttons.forEach(button => {
             if(button.textContent === input){
                //call handleInteraction func passing the button element associated with the key pressed
-               game.handleInteraction(button);
+               //if it has not already been clicked or pressed
+               if(button.disabled === false){
+                    game.handleInteraction(button);
+               }
             }
         });
         
