@@ -19,12 +19,12 @@ document.getElementById('qwerty').addEventListener('click', (event) => {
 });
 
 //event listener to listen for key presses
-document.addEventListener('keydown', (event) => {
+document.addEventListener('keyup', (event) => {
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase();
     //create an array of each letter within the alphabet
     const letters = [...alphabet];
     //obtain the string value of the key that was pressed
-    const input = event.key;
+    const input = event.key || event.keyCode;
 
     //if the key pressed was a letter key
     if (letters.findIndex(letter => letter === input) !== -1){
