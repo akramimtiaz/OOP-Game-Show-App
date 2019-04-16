@@ -37,7 +37,7 @@
 
     /** 
      * Returns a random phrase object from phrases
-     * @return  {phrase}    A random phrase object   
+     * @return  {phrase}    A random phrase object from the phrases array 
     */
     getRandomPhrase(){
         const randomIndex = Math.floor(Math.random() * this.phrases.length);
@@ -84,6 +84,7 @@
 
     /**
      * Determines if the phrase has been solved
+     * @return  {boolean}   true if all phrase LI elements are visible, false otherwise
      */
     checkForWin(){
         //if no phrase LI elements are hidden, we can assume the phrase has been solved
