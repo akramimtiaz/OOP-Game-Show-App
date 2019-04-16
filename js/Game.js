@@ -101,7 +101,6 @@
         const overlay = document.querySelector('#overlay');
 
         overlay.style.display = '';
-        overlay.classList.remove('start');
 
         if(outcome === 'win'){
             document.querySelector('#overlay h1').textContent = 'You won';
