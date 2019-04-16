@@ -6,11 +6,12 @@
 :root {
   --color-win: #78CF82;
   --color-lose: #D94545;
-  --color-start: #5b85b7;
+  --color-start: #14213D;
   --color-neutral: #445069;
-  --color-neutral-light: #D2D2D2;
+  --color-neutral-light: rgba(206, 221, 237, 0.5); /*RGB: 206, 221, 237*/
   --color-keys: #37474F;
-  --color-keys-light: #E5E5E5;
+  --color-keys-light: #D4D6DB;
+  --color-keys-hover: rgba(192, 196, 203);
   --font-size-large: 60px;
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
@@ -60,6 +61,13 @@ button {
   cursor: pointer;
 }
 
+button:hover{
+  background-color: var(--color-keys-hover);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
 #btn__reset {
 	width: 200px;
 	margin: 0 auto;
@@ -72,6 +80,7 @@ button {
   height: 100%;
   max-height: 900px;
   text-align: center;
+  background-color: #F5F5F5;
 }
 
 .section {
@@ -101,6 +110,7 @@ button {
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
+  border-bottom: .5px solid rgba(77, 133, 190, 0.5);
 }
 
 .space {
@@ -111,7 +121,7 @@ button {
 
 .show {
   color: #fff;
-  background-color: #4ac0d5;
+  background-color: rgba(77,133,190, 0.8); /*#4ac0d5*/
   font-size: 20px;
   height: 65px;
   width: 65px;
@@ -180,7 +190,7 @@ button {
 }
 
 .start {
-  background-color: #3a3f58;
+  background-color: #14213D;
 }
 
 .start a {
