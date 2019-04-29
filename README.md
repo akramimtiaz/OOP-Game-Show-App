@@ -6,3 +6,4 @@ Modifications
 - Added bottom border to Phrase LI elements
 - Changed Qwerty BUTTON elements background color
 - Added hover effect to Qwerty BUTTON elements
+- Modified heart image
